@@ -1,0 +1,66 @@
+// Colors
+  $theme-colors: (
+      primary: #169BD5,
+      gray:  #F2F2F2,
+      dark-gray: #797979,
+      dark:  #333333,
+      blue: #0500E6
+      );
+      
+//Max widths
+      $container-max-widths: (
+        sm: 540px,
+        md: 720px,
+        lg: 960px,
+        xl: 1200px
+      );    
+
+      
+@import "../bootstrap/scss/bootstrap";
+      
+//Custom styles
+
+
+body{
+    font-family: Arial;
+    font-size: .8125rem; //13px
+}
+
+h1, .h1{
+    font-size: 2rem; //32px
+}
+
+label{
+    font-size: .875rem; //14px
+}
+
+a {
+    font-size: .875rem; //14px
+    text-decoration: underline;
+    color: #0500E6;
+}
+
+ol{
+    list-style-position: inside;
+    padding: 0;
+}
+
+ul{ 
+    list-style-position: outside;
+    list-style-type: disc;
+}
+
+
+.links-list li::marker{
+    color: #0500E6;
+}
+
+@media screen and (max-width: 575px) {
+    .mobile-sticky{
+        width: 90%;
+        margin: auto;
+        position: fixed;
+        bottom: 20px;
+        z-index: 1;
+    }
+  }

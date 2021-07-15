@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="pl-PL">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="scss/custom.css">
+    <title>Formularz</title>
+</head>
+
+<body>
+    <div class="container-sm px-0">
+        <!-- nav zmienione na header -->
+        <header class="navbar bg-gray border-bottom border-dark">
+            <h1 class="text-dark font-weight-bold mt-1 mb-0">Nazwa</h1>
+        </header>
+        <div class="container">
+            <div class="row px-1">
+                <div class="col-xl-4 col-lg-6 col-md-8 col-sm-10 mx-auto form p-2">
+                    <h2 class="h4 text-dark py-2 font-weight-bold">Rejestracja</h2>
+                    <!-- Usunięte marginesy po labelach, ciemniejszy boder inputów -->
+                    <form class="justify-content-center">
+                        <div class="form-group">
+                            <label for="inputImie" class="mb-0">Imię</label>
+                            <input type="text" class="form-control border-dark-gray" id="inputImie">
+                        </div>
+                        <div class="form-group">
+                            <label for="inputNazwisko" class="mb-0">Nazwisko</label>
+                            <input type="text" class="form-control border-dark-gray" id="inputNazwisko">
+                        </div>
+                        <div class="form-group">
+                            <label for="inputEmail" class="mb-0">E-mail</label>
+                            <input type="email" class="form-control border-dark-gray" id="inputEmail">
+                        </div>
+                        <div class="form-group">
+                            <label for="inputHaslo" class="mb-0">Hasło</label>
+                            <input type="password" class="form-control border-dark-gray" id="inputHaslo">
+                        </div>
+                        <div class="form-group">
+                            <label class="d-block font-weight-bold h6">Płeć</label>
+                            <div class="custom-control custom-radio custom-control-inline">
+                                <input type="radio" id="inputPlecKobieta" name="inputPlec" class="custom-control-input">
+                                <label class="custom-control-label" for="inputPlecKobieta">Kobieta</label>
+                            </div>
+                            <div class="custom-control custom-radio custom-control-inline">
+                                <input type="radio" id="inputPlecMezczyzna" name="inputPlec"
+                                    class="custom-control-input">
+                                <label class="custom-control-label" for="inputPlecMezczyzna">Mężczyzna</label>
+                            </div>
+                        </div>
+                        <a href="./deklaracja.html" class="mb-2">Deklaracja dostępności</a>
+                        <!-- Dodany padding i margines, pogrubiona czcionka-->
+                        <button type="submit"
+                            class="btn btn-primary btn-block mt-3 p-2 font-weight-bold mobile-sticky">DALEJ</button>
+                    </form>
+                </div>
+            </div>
+        </div>
+        <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
+            integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
+            crossorigin="anonymous"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"
+            integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1"
+            crossorigin="anonymous"></script>
+        <script src='bootstrap/dist/js/bootstrap.bundle.min.js'></script>
+</body>
+
+</html>
